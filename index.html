@@ -117,7 +117,7 @@
                 <div class="position-relative mb-3">
                   <pre
                     class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
-                  ><code class="d-inline-block">irm get.msvc.win | iex</code></pre>
+                  ><code class="d-inline-block">irm https://get.msvc.win | iex</code></pre>
                   <button
                     class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
                     onclick="copyToClipboard(this)"
@@ -180,6 +180,14 @@
               </li>
               <li>
                 <p>
+                  <strong>Can I omit the https:// prefix?</strong><br />
+                  Not recommended, but you can omit it.<br />This is a precaution just in case
+                  the script may get hijacked by a bad ISP. Since some users may not know how
+                  to input colon and pipe symbol properly, so we allowed you omitting https:// prefix.
+                </p>
+              </li>
+              <li>
+                <p>
                   <strong>What are the pros and cons of this script from most of offline packages
                     (e.g. DirectX Repair, abbodi1406's VisualCppRedist_AIO)?</strong><br />
                   <strong>Pros:</strong>
@@ -210,7 +218,7 @@
                   <div class="position-relative mb-3">
                     <pre
                       class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
-                    ><code class="d-inline-block">irm get.msvc.win/32 | iex</code></pre>
+                    ><code class="d-inline-block">irm https://get.msvc.win/32 | iex</code></pre>
                     <button
                       class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
                       onclick="copyToClipboard(this)"
@@ -222,7 +230,7 @@
                   <div class="position-relative mb-3">
                     <pre
                       class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
-                    ><code class="d-inline-block">irm get.msvc.win/64 | iex</code></pre>
+                    ><code class="d-inline-block">irm https://get.msvc.win/64 | iex</code></pre>
                     <button
                       class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
                       onclick="copyToClipboard(this)"
@@ -234,7 +242,7 @@
                   <div class="position-relative mb-3">
                     <pre
                       class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
-                    ><code class="d-inline-block">irm get.msvc.win/dx | iex</code></pre>
+                    ><code class="d-inline-block">irm https://get.msvc.win/dx | iex</code></pre>
                     <button
                       class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
                       onclick="copyToClipboard(this)"
