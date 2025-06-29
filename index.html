@@ -244,11 +244,12 @@
               </li>
               <li>
                 <p>
-                  <strong>Some files from aka.ms cannot be downloaded properly.</strong><br />
-                  This is likely because your ISP is polluting DNS resolving result on purpose.
-                  Consider to change your DNS address to a public DNS (e.g. 8.8.8.8) you trust,
-                  or use your mobile data to download them instead. Entire download size is
-                  approx 200MB.
+                  <strong>Can it download via proxy?</strong><br />
+                  Yes. If you have a system proxy configured, it will download necessary files via
+                  proxy automatically. As a special measure for Chinese users who have difficulty on
+                  downloading files via GitHub releases, or the ISP supplied DNS pollutes resolving
+                  result, aria2c binary will be downloaded from Gitee, and it will automatically
+                  use AliDNS (233.5.5.5) to download installers from Microsoft Server.
                 </p>
               </li>
               <li>
