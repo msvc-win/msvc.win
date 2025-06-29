@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      msvc.win - Install Visual C++ Redistributable with one single command
+    </title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="index-page">
+    <header
+      id="header"
+      class="header d-flex align-items-center px-3 sticky-top"
+    >
+      <div
+        class="container-fluid position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">msvc.win</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu" hidden>
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">FAQ</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section transparent-background">
+        <div
+          class="container text-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2>msvc.win</h2>
+              <p>
+                Install Visual C++ Redistributable and DirectX runtime with one
+                single command!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section transparent-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Quick Start</h2>
+          <p>
+            You can install Visual C++ Redistributable and DirectX runtime with
+            3 simple steps.
+          </p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div
+            class="content justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <ol>
+              <li>
+                <p>
+                  <strong>Open PowerShell</strong><br />
+                  <!-- -->To do that, press the Windows key + X (or, right click
+                  on Start Button), then select PowerShell or Terminal.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong
+                    >Copy and paste the code below (either pressing Ctrl + V or
+                    right click on the window), then press enter.</strong
+                  >
+                </p>
+                <div class="position-relative mb-3">
+                  <pre
+                    class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
+                  ><code class="d-inline-block">irm get.msvc.win | iex</code></pre>
+                  <button
+                    class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
+                    onclick="copyToClipboard(this)"
+                  >
+                    Copy
+                  </button>
+                </div>
+              </li>
+              <li>
+                <p>
+                  Confirm UAC Prompt when asked, and wait for the procedure
+                  completes.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- FAQ Section -->
+      <section id="faq" class="contact section transparent-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>FAQ</h2>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div
+            class="content justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <ol>
+              <li>
+                <p>
+                  <strong>Why create this site?</strong><br />
+                  Some programs or games distributed on the Internet usually doesn't have
+                  necessary Runtime bundled, and users may have a headache on dealing with
+                  these programs. I've seen many gamers who had no idea about it and kept
+                  uninstalling and reinstalling games that don't bundle with runtimes, hoping
+                  it would eventually fix the problem.<br />
+                  If you frequently reinstall Windows, this is definitely the first thing you'd
+                  like to install other than drivers. I want an easy solution to use as you go,
+                  rather than mistakenly click into adwares.<br />
+                  Besides, the domain is easy to memorize: msvc stands for Microsoft Visual C++,
+                  and win stands for Windows.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Is it safe to use?</strong><br />
+                  Yes. The script is easy to understand, as we will never obfuscate the script. 
+                  The only third-party program it uses is <a href="#">aria2c</a>, an open-source
+                  commandline based downloader for downloading necessary installers faster.
+                  <br />All necessary installers are downloaded from Microsoft directly, to ensure
+                  you will always get legit and latest version of Runtimes.
+                  <br />You're welcome to review and contribute on our GitHub repository.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Do I need to uninstall existing Visual C++ Redistributable Runtimes before executing?</strong><br />
+                  No. The installer will automatically updates existing Runtimes to latest version. 
+                  For example, if you already got Visual C++ 2015 Redistributable Runtime from
+                  initial release installed, it will be automatically updated to latest version.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Are there options to install 32-bit Visual C++ Redistributable runtimes only?</strong><br />
+                  Yes. You can execute this command to install 32-bit Visual C++ Redistributable Runtimes, without installing DirectX:
+                  <div class="position-relative mb-3">
+                    <pre
+                      class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
+                    ><code class="d-inline-block">irm get.msvc.win/32 | iex</code></pre>
+                    <button
+                      class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
+                      onclick="copyToClipboard(this)"
+                    >
+                      Copy
+                    </button>
+                  </div>
+                  Similarly, you can execute this command to install both 32-bit and 64-bit Visual C++ Redistributable Runtimes, without installing DirectX:
+                  <div class="position-relative mb-3">
+                    <pre
+                      class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
+                    ><code class="d-inline-block">irm get.msvc.win/64 | iex</code></pre>
+                    <button
+                      class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
+                      onclick="copyToClipboard(this)"
+                    >
+                      Copy
+                    </button>
+                  </div>
+                  And this command for installing DirectX only:
+                  <div class="position-relative mb-3">
+                    <pre
+                      class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
+                    ><code class="d-inline-block">irm get.msvc.win/dx | iex</code></pre>
+                    <button
+                      class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
+                      onclick="copyToClipboard(this)"
+                    >
+                      Copy
+                    </button>
+                  </div>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Does it support Windows 7 / Server 2008 R2, or older?</strong><br />
+                  No. The PowerShell came with Windows 7 doesn't support it. But since
+                  you decided to use outdated Windows, I guess you've already made up your mind.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Will it support installing .NET Framework?</strong><br />
+                  Not planned yet. Usually the OS could guide you install them when it's missing,
+                  but the OS will not guide you installing Visual C++ Redistributable Runtime when
+                  it's missing.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Some files from aka.ms cannot be downloaded properly.</strong><br />
+                  This is likely because your ISP is polluting DNS resolving result on purpose.
+                  Consider to change your DNS address to a public DNS (e.g. 8.8.8.8) you trust,
+                  or use your mobile data to download them instead. Entire download size is
+                  approx 200MB.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>I came here for Visual C++ development tool. Where can I download it?</strong><br />
+                  It's a part of Visual Studio. <a href="https://visualstudio.microsoft.com/downloads/">You can download from here.</a>
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer transparent-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            <strong class="px-1 sitename">DirectX, PowerShell, Visual C++, and Windows</strong><span>are trademarks of Microsoft Corporation. This website is not supported or endorsed by Microsoft Corporation.</span>
+          </p>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/msvc-win"><i class="bi bi-github"></i></a>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Template Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script>
+      function copyToClipboard(button) {
+        const code = button.previousElementSibling.textContent;
+        navigator.clipboard.writeText(code).then(() => {
+          button.textContent = "Copied!";
+          setTimeout(() => (button.textContent = "Copy"), 2000);
+        });
+      }
+    </script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
