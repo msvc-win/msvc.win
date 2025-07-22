@@ -182,6 +182,19 @@
               </li>
               <li>
                 <p>
+                  <strong>My PC has corrupted Visual C++ Redistributable Runtime installation thatt cannot be removed due to missing MSI files. How can I fix it?</strong><br />
+                  You can use <a href="https://www.majorgeeks.com/files/details/windows_installer_cleanup_utility.html" target="_blank">Windows Installer CleanUp Utility 7.2</a>
+                  to force remove corrupted Visual C++ Redistributable Runtime installation. To do that:
+                  <ul>
+                    <li>Run downloaded msicuu2.exe with Administrator privilege by right click on it, and choose "Run As Administrator". If you see error messages related to VBScript, it means you didn't run it as Administrator.</li>
+                    <li>Locate "Windows Installer CleanUp Utility" in Start Menu, right click on it, and choose "More" - "Run As Administrator".</li>
+                    <li>Select all of entries started by "Microsoft Visual C++", and click "Remove", confirm Remove. If you can't see them or you can't remove them, it means you didn't run it as Administrator.</li>
+                    <li>Now you can try to execute the command to install Runtime again.</li>
+                  </ul>
+                </p>
+              </li>
+              <li>
+                <p>
                   <strong>Can I omit the https:// prefix?</strong><br />
                   Not recommended, but you can omit it.<br />This is a precaution just in case
                   the script may get hijacked by a bad ISP. Since some users may not know how
