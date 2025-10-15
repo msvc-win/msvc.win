@@ -301,6 +301,18 @@
               </li>
               <li>
                 <p>
+                  <strong>I'd like to integrate it into Windows Installation Image, how can I do that?</strong><br />
+                  <a href="https://get.msvc.win/$OEM$.zip">You can download the script from here.</a>
+                  <br />You can place extracted $OEM$ folder and autounattend.xml into sources folder of
+                  Windows Installation Image, or USB drive that created by Windows Media Creation Tool.
+                  <br />If you'd like to slipstream the script into install.wim, please rename autounattend.xml into
+                  unattend.xml and place it into Windows/Panther folder (create one if doesn't exist) of install.wim, 
+                  then copy GetMSVC.ps1 from $OEM$/$$/Setup/Scripts to Windows/Setup/Scripts folder (create one if 
+                  doesn't exist) of install.wim.
+                </p>
+              </li>
+              <li>
+                <p>
                   <strong>I came here for Visual C++ development tool. Where can I download it?</strong><br />
                   It's a part of Visual Studio. <a href="https://visualstudio.microsoft.com/downloads/">You can download from here.</a>
                 </p>
