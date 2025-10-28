@@ -7,7 +7,7 @@
       msvc.win - Install Visual C++ Redistributable with one single command
     </title>
     <meta name="description" content="Install Visual C++ Redistributable Runtime with one single PowerShell command" />
-    <meta name="keywords" content="visual c++ runtime, visualcppredist, all in one, msvcrt, directx, vcruntime140.dll, msvcp120.dll missing, 运行库, VC运行库, 运行库合集, msvbcrt" />
+    <meta name="keywords" content="visual c++ runtime, visualcppredist, all in one, msvcrt, directx, vcruntime140.dll, msvcp120.dll missing, 运行库, VC运行库, 运行库合集, msvbcrt, net3.5" />
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
@@ -73,7 +73,7 @@
             <div class="col-lg-8">
               <h2>msvc.win</h2>
               <p>
-                Install Visual C++ Redistributable and DirectX runtime with one
+                Install Visual C++ Redistributable, DirectX runtime and .NET Framework 3.5 with one
                 single command!
               </p>
             </div>
@@ -88,7 +88,7 @@
         <div class="container section-title" data-aos="fade-up">
           <h2>Quick Start</h2>
           <p>
-            You can install Visual C++ Redistributable and DirectX runtime with
+            You can install Visual C++ Redistributable, DirectX runtime and .NET Framework 3.5 with
             3 simple steps.
           </p>
         </div>
@@ -228,6 +228,14 @@
               </li>
               <li>
                 <p>
+                  <strong>I'm using latest Windows 11 Insider Release. Can I still install .NET Framework 3.5?</strong><br />
+                  Yes, it will automatically download the suitable version (known as .NET Framework 3.5 Preview for Windows vNext)
+                  for Windows 11 Insider Release, as the previous method for installing .NET Framework 3.5 with your Windows
+                  Installation ISO no longer works since Build 27965.
+                </p>
+              </li>
+              <li>
+                <p>
                   <strong>Are there options to install 32-bit Visual C++ Redistributable runtimes only?</strong><br />
                   Yes. You can execute this command to install 32-bit Visual C++ Redistributable Runtimes, without installing DirectX:
                   <div class="position-relative mb-3">
@@ -258,6 +266,18 @@
                     <pre
                       class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
                     ><code class="d-inline-block">irm https://get.msvc.win/dx | iex</code></pre>
+                    <button
+                      class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
+                      onclick="copyToClipboard(this)"
+                    >
+                      Copy
+                    </button>
+                  </div>
+                  And this command for installing .NET Framework 3.5 only:
+                  <div class="position-relative mb-3">
+                    <pre
+                      class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
+                    ><code class="d-inline-block">irm https://get.msvc.win/net35 | iex</code></pre>
                     <button
                       class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
                       onclick="copyToClipboard(this)"
