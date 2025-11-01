@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      一条命令安装 Visual C++ 运行库 - msvc.win
+    </title>
+    <meta name="description" content="一条命令安装 Visual C++ 运行库" />
+    <meta name="keywords" content="visual c++ runtime, visualcppredist, all in one, msvcrt, directx, vcruntime140.dll, msvcp120.dll missing, 运行库, VC运行库, 运行库合集, msvbcrt, net3.5" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="index-page">
+    <header
+      id="header"
+      class="header d-flex align-items-center px-3 sticky-top"
+    >
+      <div
+        class="container-fluid position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">msvc.win</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">English</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section transparent-background">
+        <div
+          class="container text-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2>msvc.win</h2>
+              <p>
+                只需一条命令即可安装 Visual C++、DirectX 和 .NET Framework 3.5！
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section transparent-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>快速指南</h2>
+          <p>
+            您只需以下三个简单的步骤即可安装 Visual C++、DirectX 和 .NET Framework 3.5 运行库。
+          </p>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div
+            class="content justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <ol>
+              <li>
+                <p>
+                  <strong>打开 PowerShell</strong><br />
+                  <!-- -->请按下键盘的 Windows 键 + X (或右键点击“开始”按钮)，然后选择 <strong>PowerShell</strong> 或 <strong>终端</strong>。
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong
+                    >复制并粘贴以下代码(按 Ctrl + V 或右键单击窗口)，然后按回车键。</strong
+                  >
+                </p>
+                <div class="position-relative mb-3">
+                  <pre
+                    class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
+                  ><code class="d-inline-block">irm https://get.msvc.win | iex</code></pre>
+                  <button
+                    class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
+                    onclick="copyToClipboard(this)"
+                  >
+                    复制
+                  </button>
+                </div>
+              </li>
+              <li>
+                <p>
+                  如提示 UAC 提示，请点击确认，然后等待完成即可。<strong>建议您在继续操作前，禁用或卸载第三方反病毒软件 (尤其是360安全卫士)。</strong>
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- FAQ Section -->
+      <section id="faq" class="contact section transparent-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>常见问题</h2>
+        </div>
+        <!-- End Section Title -->
+        <div class="container">
+          <div
+            class="content justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <ol>
+              <li>
+                <p>
+                  <strong>为何创建这个网站？</strong><br />
+                    有些在互联网上分发的程序或游戏通常没有捆绑必要的运行时环境，用户可能会因此遇到很多麻烦。
+                    我见过很多玩家对此毫不知情，他们不断地卸载并重新安装那些没有捆绑运行时环境的游戏，希望最终能解决问题。<br />
+                    如果您经常重装 Windows 系统，那么除了驱动程序之外，这绝对是您最想安装的东西。
+                    我想要一个简单易用的解决方案，而不是误点到广告软件。<br />
+
+                    此外，这个域名很容易记住：msvc 代表 Microsoft Visual C++，而 win 代表 Windows。
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>使用起来安全吗？</strong><br />
+                  是的。我们绝不会对相关脚本其进行混淆处理，因此脚本内容易于理解。
+                  它使用的唯一第三方程序是<a href="https://aria2.github.io/">aria2c</a>，这是一个开源的
+                  基于命令行的下载器，用于更快地下载必要的安装程序。
+                  <br />所有必要的安装程序均直接从微软服务器下载，以确保您始终获得正规且最新的运行时环境。
+                  <br />欢迎您在我们的 GitHub 代码库中查看和贡献代码。
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>我的电脑上 Visual C++ 运行库安装损坏，或是由于缺少 MSI 文件而无法卸载。我该如何修复？</strong><br />
+                  你可以下载 <a href="https://www.majorgeeks.com/files/details/windows_installer_cleanup_utility.html" target="_blank">Windows Installer CleanUp Utility 7.2</a>来强制删除损坏的运行库安装。如需操作：
+                  <ul>
+                    <li>请右键单击下载的 msicuu2.exe 文件，选择“以管理员身份运行”，以管理员权限运行它。如果您看到与 VBScript 相关的错误消息，则表示您没有以管理员身份运行它。</li>
+                    <li>在“开始”菜单中找到“Windows Installer CleanUp Utility”，右键单击它，然后选择“更多” - “以管理员身份运行”。</li>
+                    <li>选择所有以“Microsoft Visual C++”开头的条目，然后单击“删除”，并确认删除。如果您看不到这些条目或无法删除它们，则表示您没有以管理员身份运行该程序。</li>
+                    <li>N现在您可以尝试再次执行安装运行库的命令。</li>
+                  </ul>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>我可以省略 https:// 前缀吗？</strong><br />
+                    不建议这样做，但您可以省略。<br />这是为了防止脚本可能被恶意网络服务提供商劫持的预防措施。由于部分用户可能不知道如何
+                    正确输入冒号和竖线符号，因此我们允许您省略 https:// 前缀。
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>与大多数离线软件包(例如 DirectX Repair、abbodi1406 的 VisualCppRedist_AIO)相比，该脚本的优缺点是什么？</strong><br />
+                  <strong>优点：</strong>
+                  <ul>
+                    <li>你只需要记住一个命令，而不用从任何地方查找软件包下载。</li>
+                    <li>该脚本是开源的，并且始终会从微软官方网站下载正版文件，而不是点击搜索引擎上的恶意付费搜索结果。</li>
+                    <li>该脚本始终会将您引导至最新稳定版本的 Visual C++ 运行库安装包。</li>
+                  </ul>
+                  <strong>缺点：</strong>
+                  <ul>
+                    <li>需要互联网连接。</li>
+                    <li>不支持未安装最新更新的过时版本 Windows (例如 Windows 7)，也不鼓励使用。</li>
+                  </ul>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>执行前是否需要卸载已安装的 Visual C++ 运行库？</strong><br />
+                  不。安装程序会自动将现有运行时更新到最新版本。
+                  例如，如果您已经安装了 Visual C++ 2015 Redistributable Runtime(初始版本)，
+                  它将自动更新到最新版本。
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>我正在使用最新的 Windows 11 内部预览版本。我仍然可以安装 .NET Framework 3.5 吗？</strong><br />
+                  是的，它会自动下载适用于 Windows 11 Insider Release 的合适版本(称为 .NET Framework 3.5 Preview for Windows vNext)，因为从 Build 27965 开始，之前使用 Windows 安装 ISO 安装 .NET Framework 3.5 的方法不再有效。
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>是否有只安装 32 位 Visual C++ 运行库的选项？</strong><br />
+                  是的。您可以执行此命令来安装 32 位 Visual C++ 运行库，而无需安装 DirectX：
+                  <div class="position-relative mb-3">
+                    <pre
+                      class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
+                    ><code class="d-inline-block">irm https://get.msvc.win/32 | iex</code></pre>
+                    <button
+                      class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
+                      onclick="copyToClipboard(this)"
+                    >
+                      复制
+                    </button>
+                  </div>
+                  同样，您也可以执行此命令来安装 32 位和 64 位 Visual C++ 可再发行组件运行时，而无需安装 DirectX：
+                  <div class="position-relative mb-3">
+                    <pre
+                      class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
+                    ><code class="d-inline-block">irm https://get.msvc.win/64 | iex</code></pre>
+                    <button
+                      class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
+                      onclick="copyToClipboard(this)"
+                    >
+                      复制
+                    </button>
+                  </div>
+                  也可以执行此命令仅安装 DirectX：
+                  <div class="position-relative mb-3">
+                    <pre
+                      class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
+                    ><code class="d-inline-block">irm https://get.msvc.win/dx | iex</code></pre>
+                    <button
+                      class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
+                      onclick="copyToClipboard(this)"
+                    >
+                      复制
+                    </button>
+                  </div>
+                  还可执行此命令仅安装 .NET Framework 3.5：
+                  <div class="position-relative mb-3">
+                    <pre
+                      class="bg-dark text-white p-3 pe-5 rounded overflow-auto"
+                    ><code class="d-inline-block">irm https://get.msvc.win/net35 | iex</code></pre>
+                    <button
+                      class="btn btn-sm btn-dark position-absolute top-0 end-0 m-2"
+                      onclick="copyToClipboard(this)"
+                    >
+                      复制
+                    </button>
+                  </div>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>是否支持 Windows 7 / Server 2008 R2？</strong><br />
+                  可以，但需满足以下条件：
+                  <ul>
+                    <li>需要安装最新的安全更新以及 <a href="https://catalog.update.microsoft.com/Search.aspx?q=KB976932" target="_blank">Service Pack 1 (如果还未安装)</a>, 以验证微软的 SHA-2 签名。 <a href="https://blog.simplix.info/update7/" target="_blank">为了节省精力，我们建议使用 simplix 的 UpdatePack7R2 完成更新。</a></li>
+                    <li>安装 <a href="https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net48-web-installer" target="_blank">.NET Framework 4.8。</a></li>
+                    <li>根据你 Windows 的架构来安装 <a href="https://www.microsoft.com/en-us/download/details.aspx?id=54616" target="_blank">Windows Management Framework 5.1</a>。具体而言，你需要安装里面的 KB3191566 msu 安装包。</li>
+                  </ul>
+                  <br />
+                  然后你就可以使用相关命令了。<s>还是忘了 XP 和 Vista 吧。</s>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>我可以通过代理下载吗？</strong><br />
+                    可以。如果您配置了系统代理，它将通过代理自动下载必要的文件。
+                    针对中国用户在通过 GitHub 发布版本下载文件时遇到的困难，或 ISP 提供的 DNS 解析结果存在污染等问题，我们将从 Gitee 下载 aria2c 二进制文件，并自动使用 AliDNS (233.5.5.5) 从 Microsoft 服务器下载安装程序。
+                    系统代理配置的优先级高于 AliDNS。
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>我想将其整合进 Windows 安装镜像，要如何操作？</strong><br />
+                  <a href="https://get.msvc.win/$OEM$.zip">你可以在这里下载整合包。</a>
+                  <br />您可以将解压的 $OEM$ 文件夹和 autounattend.xml 文件放入 Windows 安装映像的 sources 文件夹，或者放入由 Windows 媒体创建工具创建的 USB 驱动器的 sources 文件夹中。
+                  <br />如果您想将脚本集成到 install.wim 中，请将 autounattend.xml 重命名为 unattend.xml 并将其放入 install.wim 的 Windows/Panther 文件夹（如果不存在则创建一个），然后将 GetMSVC.ps1 从 $OEM$/$$/Setup/Scr​​ipts 复制到 install.wim 的 Windows/Setup/Scr​​ipts 文件夹（如果不存在则创建一个）。
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>我过来是为了 Visual C++ 开发工具的。要如何获取？</strong><br />
+                  它是 Visual Studio 的一部分。 <a href="https://visualstudio.microsoft.com/downloads/">你可以在这里下载？</a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>它未能符合预期工作。我该在哪里寻求帮助？</strong><br />
+                  <a href="https://github.com/msvc-win/get.msvc.win/issues">你可以在这里发表反馈。</a>
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer transparent-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            <strong class="px-1 sitename">DirectX，PowerShell，Visual C++ 以及 Windows</strong><span>是 Microsoft Corporation 的注册商标。该网站不受 Microsoft Corporation 的支持和鼓励。</span>
+          </p>
+          <p>
+            <a href="https://hikaricalyx.com/">光卡科技</a>项目
+          </p>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/msvc-win"><i class="bi bi-github"></i></a>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Template Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script>
+      function copyToClipboard(button) {
+        const code = button.previousElementSibling.textContent;
+        navigator.clipboard.writeText(code).then(() => {
+          button.textContent = "已复制!";
+          setTimeout(() => (button.textContent = "复制"), 2000);
+        });
+      }
+    </script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
