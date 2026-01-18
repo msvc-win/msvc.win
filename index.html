@@ -333,6 +333,14 @@
               </li>
               <li>
                 <p>
+                  <strong>Certain programs compiled with Visual C++ 2015 (e.g. ACDSee) cannot run after solely installing Visual C++ v14. What should I do?</strong><br />
+                    You may need to install older version Visual C++ 2015-2022 Redistributable Runtime, then execute the command to upgrade to Visual C++ v14 afterwards.
+                    Make sure you have uninstalled Visual C++ v14 Redistributable Runtime before you proceed.
+                    <br /><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">[32-bit x86]</a>&nbsp;<a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">[64-bit x64]</a>&nbsp;<a href="https://aka.ms/vs/17/release/vc_redist.arm64.exe" target="_blank">[ARM64]</a>
+                </p>
+              </li>
+              <li>
+                <p>
                   <strong>I'd like to integrate it into Windows Installation Image, how can I do that?</strong><br />
                   <a href="https://get.msvc.win/$OEM$.zip">You can download the script from here.</a>
                   <br />You can place extracted $OEM$ folder and autounattend.xml into sources folder of

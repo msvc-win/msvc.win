@@ -314,6 +314,14 @@
               </li>
               <li>
                 <p>
+                  <strong>个别严格使用 Visual C++ 2015 构建的程序（例如 ACDSee）在只安装 Visual C++ v14 运行时的情况下无法运行。我该怎么办？</strong><br />
+                    你也许想手动安装较旧版本的 Visual C++ 2015-2022 运行时，然后再来执行此命令更新到 Visual C++ v14。
+                    安装前，需要先卸载已经安装的 Visual C++ v14 运行时，然后手动从这里下载对应的运行时进行安装：
+                    <br /><a href="https://aka.ms/vs/17/release/vc_redist.x86.exe" target="_blank">[32位 x86]</a>&nbsp;<a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">[64位 x64]</a>&nbsp;<a href="https://aka.ms/vs/17/release/vc_redist.arm64.exe" target="_blank">[ARM64]</a>
+                </p>
+              </li>
+              <li>
+                <p>
                   <strong>我想将其整合进 Windows 安装镜像，要如何操作？</strong><br />
                   <a href="https://get.msvc.win/$OEM$.zip">你可以在这里下载整合包。</a>
                   <br />您可以将解压的 $OEM$ 文件夹和 autounattend.xml 文件放入 Windows 安装映像的 sources 文件夹，或者放入由 Windows 媒体创建工具创建的 USB 驱动器的 sources 文件夹中。
